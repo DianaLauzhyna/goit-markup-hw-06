@@ -431,6 +431,7 @@ nav ul li:last-child {
   left: 12px;
   display: inline-block;
   align-items: center;
+  cursor: pointer;
 }
 
 .agreement {
@@ -493,17 +494,32 @@ textarea {
   line-height: 1.166;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  padding-left: 16px;
-  padding-top: 12px;
+
 }
+
+.modal-text-textarea {
+padding: 12px 16px;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;}
+
+
+
+
+
+
+
 
 .service-form input:hover,
 .service-form input:focus {
   border: 1px solid #2196f3;
 }
 
+
+
 .service-form input:hover + .modal-icon-form,
-.service-form input:hover + .modal-icon-form {
+.service-form input:focus + .modal-icon-form
+ {
   fill: var(--link-color);
 }
 
@@ -981,7 +997,14 @@ footer .container {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
+  padding-left: 10px;
+  color: var(--main-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
+
+
 
 .sub {
   padding-right: 10px;
